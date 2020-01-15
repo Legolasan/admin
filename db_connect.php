@@ -1,10 +1,6 @@
 <?php
-   $host        = "host = hevo-common.c4fgwnhdfb5t.ap-southeast-1.redshift.amazonaws.com";
-   $port        = "port = 5432";
-   $dbname      = "dbname = zendesk";
-   $credentials = "user = root password=ZGRAf43DeQtTuDkz";
 
-   $db = pg_connect( "$host $port $dbname $credentials"  );
+   $db = pg_connect("host=marketing-redshift.hevo.me port=5439 dbname=support user=support password=h3dwPwJ7lHptXPU7zqAeODHutFbF9S");
    if(!$db) {
       echo "Error : Unable to open database\n";
    } else {
